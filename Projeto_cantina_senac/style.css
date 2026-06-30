@@ -1,0 +1,463 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #f5f5f5;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    border-bottom: 4px solid #f4c430;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+.hero {
+    background: #004c99; /* Azul Sesc/Senac */
+    color: white;
+    min-height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+
+.hero h2::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #f4c430;
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.hero {
+    background: #004c99;
+    color: white;
+    min-height: 450px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 80px 10%;
+}
+
+.hero-conteudo {
+    max-width: 700px;
+    text-align: left;
+}
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    height: 65px;
+    width: auto;
+}
+
+.logo-texto h1 {
+    color: #004c99;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.logo-texto p {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* NAVEGAÇÃO */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #004c99;
+    border-bottom-color: #f4c430;
+}
+
+.botao {
+    display: inline-block;
+    background: #f4c430;
+    color: #222;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.botao:hover {
+    background: #e0b020;
+}
+
+
+/* SEÇÕES */
+section {
+    padding: 60px 10%;
+    background: #ffffff;
+}
+
+section:nth-child(even) {
+    background: #f9f9f9;
+}
+
+section h2 {
+    text-align: center;
+    color: #004c99;
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+    padding-bottom: 12px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f4c430;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao {
+    text-align: center;
+}
+
+.apresentacao p {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* CARDÁPIO */
+.cardapio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.categoria {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid #004c99;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.categoria h3 {
+    color: #004c99;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.categoria ul,
+.categoria ol {
+    padding-left: 20px;
+}
+
+.categoria li {
+    margin-bottom: 9px;
+    font-size: 0.97rem;
+}
+
+/* PROMOÇÕES */
+.promocoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.promocao {
+    background: #fff;
+    border-left: 5px solid #f4c430;
+    padding: 22px 26px;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    flex: 1 1 260px;
+    max-width: 340px;
+}
+
+.promocao h3 {
+    color: #004c99;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+mark {
+    background: #f4c430;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+figure {
+    width: 290px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+figure:hover {
+    transform: translateY(-4px);
+}
+
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: bold;
+}
+
+/* FORMULÁRIO */
+form {
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #004c99;
+    font-size: 0.95rem;
+}
+
+input {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #004c99;
+}
+
+button {
+    margin-top: 24px;
+    background: #004c99;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #003a75;
+}
+
+/* ASIDE */
+aside {
+    background: #004c99;
+    color: white;
+    padding: 50px 10%;
+}
+
+aside h2 {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f4c430;
+    display: inline-block;
+}
+
+.aside-item {
+    margin-bottom: 25px;
+}
+
+.aside-item h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #f4c430;
+}
+
+.aside-item ul {
+    padding-left: 20px;
+}
+
+.aside-item li {
+    margin-bottom: 5px;
+    opacity: 0.92;
+}
+
+/* FOOTER */
+footer {
+    background: #002f5f;
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-conteudo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.footer-bloco h3 {
+    color: #f4c430;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-bloco p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-bottom: 5px;
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .carrossel {
+        height: 350px;
+    }
+
+    .slide-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .slide-texto {
+        left: 5%;
+        max-width: 90%;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    aside {
+        padding: 40px 5%;
+    }
+
+    footer {
+        padding: 30px 5%;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .logo-texto h1 {
+        font-size: 1.3rem;
+    }
+}
+
+#inicio,
+#cardapio,
+#promocoes,
+#galeria,
+#contato{
+    scroll-margin-top: 70px;
+}

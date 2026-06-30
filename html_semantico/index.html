@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semântico</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <h1>Header (Cabeçalho)</h1>
+    <h1>Segundo Título</h1>
+  </header>
+
+  <div class="page-layout">
+    <nav class="sidebar nav-left">
+      <p>Nav (Menu de navegação)</p>
+    </nav>
+
+    <main class="content">
+      <section class="articles">
+        <article class="card">
+          <h2>Article 1</h2>
+        </article>
+
+        <article class="card">
+          <h2>Article 2</h2>
+        </article>
+
+        <article class="card novo-article">
+          <h2>Article 3</h2>
+        </article>
+      </section>
+
+      <section class="featured">
+        <div class="featured-meta">
+          <span>25 de Maio de 2026</span>
+        </div>
+
+        <figure class="featured-image">
+          <img src="assets/image/image.png" alt="Descrição da imagem">
+          <figcaption>Imagem aérea da catedral do centro de são josé dos pinhais.</figcaption>
+        </figure>
+
+        <p class="featured-text">
+          Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit.
+        </p>
+      </section>
+    </main>
+
+    <aside class="sidebar aside-right">
+      <p>Aside (anúncios, links secundários, etc...)</p>
+    </aside>
+  </div>
+
+  <footer class="page-footer">
+    <h2>Footer (Rodapé)</h2>
+    <address>teste@testando.com</address>
+  </footer>
+</body>
+
+</html>
